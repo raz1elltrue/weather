@@ -20,5 +20,7 @@ class TestCalculateAverage(unittest.TestCase):
     def test_average_of_floats(self):
         self.assertAlmostEqual(calculate_average([1.5, 2.5, 3.5]), 2.5)
 
+
+
 if __name__ == '__main__':
     unittest.main()
