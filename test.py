@@ -1,3 +1,15 @@
+"""
+    Module containing utility functions for basic operations.
+
+    Functions:
+        calculate_average(numbers): Calculate the average of a list of numbers.
+        reverse_string(s): Reverse the given string.
+        is_prime(n): Check if a number is prime.
+        add(a, b): Add two numbers and return the result.
+
+    Reads and prints the contents of 'file.txt'.
+    """
+
 def calculate_average(numbers):
     if not numbers:
         return 0
@@ -18,3 +30,9 @@ def is_prime(n):
 
 def add(a, b):
     return a + b
+
+
+with open("file.txt", "r") as file:
+    # Read the file and print the content
+    contents = file.read()
+    print(contents)
